@@ -75,7 +75,6 @@ frontend/
 └── README.md
 
 
-
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
