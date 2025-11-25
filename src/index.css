@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary: #2563eb;
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+  
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .btn-secondary {
+    background-color: rgb(229 231 235);
+    color: rgb(55 65 81);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgb(209 213 219);
+  }
+  
+  .btn-danger {
+    background-color: rgb(239 68 68);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-danger:hover {
+    background-color: rgb(220 38 38);
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(209 213 219);
+    border-radius: 0.5rem;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgb(37 99 235 / 0.1);
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+  }
+}
